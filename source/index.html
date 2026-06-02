@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Summer Camp - Resources</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+      text-align: center;
+      min-height: 100vh; /* Ensure body takes full viewport height */
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Styles for navigation buttons (reused for resource links) */
+    .button-container {
+      margin: 1.5rem auto; /* Adjusted margin for resource sections */
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px; /* Wider for more links */
+      padding: 0 1rem; /* Add padding for smaller screens */
+    }
+
+    .button-container button,
+    .button-container a { /* Apply styles to anchor tags too */
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background 0.4s ease;
+      text-decoration: none; /* Remove underline for links */
+      display: block; /* Make links behave like block buttons */
+      width: 100%; /* Full width for block buttons */
+      box-sizing: border-box; /* Include padding in width */
+    }
+
+    .button-container button:hover,
+    .button-container a:hover {
+      transform: scale(1.03); /* Slightly less scale for individual links */
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+    }
+
+    main {
+      flex-grow: 1; /* Allows main content to take available space */
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    main section {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    main h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      color: #00c6ff;
+      text-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
+    }
+
+    main ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem; /* Smaller gap for list items */
+    }
+
+    main ul li {
+      margin-bottom: 0.5rem; /* Space between list items */
+    }
+
+    main ul li a {
+      font-size: 1rem; /* Slightly smaller font for resource links */
+      padding: 0.8rem; /* Slightly smaller padding for resource links */
+      color: #e0e0e0; /* Lighter color for links */
+    }
+
+    footer {
+      margin-top: auto; /* Pushes footer to the bottom */
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    /* Media queries for responsiveness */
+    @media (min-width: 768px) {
+      .button-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem; /* Larger gap for row layout */
+      }
+
+      .button-container button,
+      .button-container a {
+        width: 280px; /* Fixed width for larger screens */
+      }
+
+      main ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grid for links */
+        gap: 1rem; /* Gap for grid items */
+      }
+
+      main ul li a {
+        width: auto; /* Let grid handle width */
+      }
+    }
+
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 2.2rem;
+        }
+        header p {
+            font-size: 1.05rem; /* Slightly larger for readability on small screens */
+        }
+        main h2 {
+            font-size: 1.6rem;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 AI Summer Camp Resources</h1>
+    <p>
+      Dive deeper into the world of Artificial Intelligence with these curated resources.
+      From foundational concepts to advanced tools, find everything you need to enhance your learning journey!
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Jupyter Notebooks</h2>
+      <ul>
+        <li>
+            <a href="../Day2/notebook_viewer.html" target="_blank">
+              Guided Practice: Train Your First Model
+            </a>
+          </li>
+        <li>
+          <a href="../Day3/real-time-detection-summer-camp.py" target="_blank">
+              Guided Practice: Real-Time Object Detection (click to download)
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+ <section>
+      <h2>Pretrained Models</h2>
+      <ul>
+        <li>
+            <a href="../models/cards.pt" target="_blank">
+              Pretrained Model: Cards Detection (click to download)
+            </a>
+          </li>
+        <li>
+          <a href="../models/emotion.pt" target="_blank">
+              Pretrained Model: Emotion Detection (click to download) 
+          </a>
+        </li>
+        <li>
+          <a href="../models/mobile-phone.pt" target="_blank">
+              Pretrained Model: Mobile Phone Detection (click to download)
+          </a>
+        </li>
+        <li>
+          <a href="../models/pen.pt" target="_blank">
+              Pretrained Model: Pen Detection (click to download)
+          </a>
+        </li>
+        <li>
+          <a href="../models/people.pt" target="_blank">
+              Pretrained Model: People Detection (click to download)
+          </a>
+        </li>
+        <li>
+          <a href="../models/laptop.pt" target="_blank">
+              Pretrained Model: Laptop Detection (click to download)
+          </a>
+        </li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h2>General AI & Machine Learning Foundations</h2>
+      <ul>
+        <li><a href="https://developers.google.com/machine-learning/glossary" target="_blank">Google ML Glossary: Essential AI/ML Terms</a></li>
+        <li><a href="https://www.coursera.org/learn/machine-learning-duke" target="_blank">Introduction to Machine Learning (Coursera)</a></li>
+        <li><a href="https://www.deeplearning.ai/" target="_blank">DeepLearning.AI: Specialization Courses</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Python & Essential Libraries</h2>
+      <ul>
+        <li><a href="https://www.python.org/doc/" target="_blank">Python Official Documentation</a></li>
+        <li><a href="https://numpy.org/doc/stable/" target="_blank">NumPy Documentation (Numerical Python)</a></li>
+        <li><a href="https://pandas.pydata.org/docs/" target="_blank">Pandas Documentation (Data Analysis)</a></li>
+        <li><a href="https://matplotlib.org/stable/users/index.html" target="_blank">Matplotlib Documentation (Plotting)</a></li>
+        <li><a href="https://scikit-learn.org/stable/documentation.html" target="_blank">scikit-learn Documentation (ML Algorithms)</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Deep Learning Frameworks</h2>
+      <ul>
+        <li><a href="https://www.tensorflow.org/api_docs/python/tf" target="_blank">TensorFlow Official Documentation</a></li>
+        <li><a href="https://pytorch.org/docs/stable/index.html" target="_blank">PyTorch Official Documentation</a></li>
+        <li><a href="https://keras.io/api/" target="_blank">Keras Documentation (High-level API)</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tools & Environments</h2>
+      <ul>
+        <li><a href="https://colab.research.google.com/" target="_blank">Google Colab (Cloud Jupyter Notebooks)</a></li>
+        <li><a href="https://jupyter.org/" target="_blank">Jupyter Notebooks (Local Environment)</a></li>
+        <li><a href="https://code.visualstudio.com/" target="_blank">VS Code (Popular Code Editor)</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Datasets & Project Inspiration</h2>
+      <ul>
+        <li><a href="https://universe.roboflow.com/" target="_blank">Roboflow (Image & Video Datasets)</a></li>
+        <li><a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets (Machine Learning Datasets)</a></li>
+        <li><a href="https://paperswithcode.com/datasets" target="_blank">Papers With Code - Datasets</a></li>
+        <li><a href="https://www.towardsdatascience.com/" target="_blank">Towards Data Science (Project Ideas & Articles)</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Community & Support</h2>
+      <ul>
+        <li><a href="https://stackoverflow.com/tags/machine-learning" target="_blank">Stack Overflow (ML Tag)</a></li>
+        <!-- <li><a href="https://discord.gg/" target="_blank">AI Summer Camp Discord (Placeholder)</a></li> -->
+        <li><a href="https://www.reddit.com/r/MachineLearning/" target="_blank">r/MachineLearning (Reddit Community)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <nav class="button-container">
+    <a href="../index.html" class="back-button">Back to Home</a>
+  </nav>
+
+  <footer>
+    © 2025 AI Summer Camp · Powered by Curiosity + Code 🤖✨
+  </footer>
+
+</body>
+</html>

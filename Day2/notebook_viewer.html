@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Summer Camp - Notebook Viewer</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;500&display=swap");
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      header {
+        padding: 1rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      header h1 {
+        font-family: "Orbitron", sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        color: #00c6ff;
+        text-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
+      }
+
+      .header-buttons {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        justify-content: center;
+        gap: 1rem; /* Space between buttons */
+        width: 100%; /* Take full width of header */
+        max-width: 600px; /* Limit width for aesthetics */
+      }
+
+      .download-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease, background 0.4s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .download-button:hover {
+        transform: scale(1.05);
+        background: linear-gradient(90deg, #0072ff, #00c6ff);
+      }
+
+      .iframe-container {
+        width: 100%;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      iframe {
+        border: 2px solid #00c6ff;
+        border-radius: 15px;
+        width: 100%;
+        height: 700px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        overflow-y: hidden;
+        margin-right: 5%;
+        margin-left: 5%;
+      }
+
+      footer {
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+        color: #ccc;
+        margin-top: auto;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        .download-button {
+          font-size: 0.9rem;
+          padding: 0.6rem 1.2rem;
+        }
+        .iframe-container {
+          padding: 0.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Guided Practice: Train Your First Model</h1>
+      <div class="header-buttons">
+        <button
+          onclick="window.location.href='../source/index.html'"
+          class="download-button"
+        >
+          Back to Main Menu
+        </button>
+        <button onclick="downloadNotebook()" class="download-button">
+          Download Original Notebook (.ipynb)
+        </button>
+      </div>
+    </header>
+    <div class="iframe-container">
+      <iframe
+        id="notebookIframe"
+        src="AI_summer_camp.html"
+        title="Guided Practice Notebook"
+      ></iframe>
+    </div>
+
+    <footer>© 2025 AI Summer Camp · Powered by Curiosity + Code 🤖✨</footer>
+
+    <script>
+      function downloadNotebook() {
+        const link = document.createElement("a");
+        link.href = "AI_summer_camp.ipynb";
+        link.download = "AI_summer_camp.ipynb";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+      function resizeIframe(obj) {
+        if (obj.contentDocument) {
+          obj.style.height =
+            obj.contentDocument.documentElement.scrollHeight + "px";
+        } else {
+          console.warn(
+            "Cannot access iframe contentDocument due to cross-origin restrictions or content not loaded."
+          );
+        }
+      }
+
+      const notebookIframe = document.getElementById("notebookIframe");
+
+      notebookIframe.onload = function () {
+        resizeIframe(this);
+      };
+
+      window.addEventListener("resize", () => {
+        if (notebookIframe.contentDocument) {
+          notebookIframe.style.height = "auto";
+          resizeIframe(notebookIframe);
+        }
+      });
+    </script>
+  </body>
+</html>

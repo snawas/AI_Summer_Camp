@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AI Summer Camp - Day 2</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css"
+      id="theme"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css"
+    />
+
+    <style>
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .reveal ul {
+        list-style-type: disc;
+        margin-left: 2em; 
+        text-align: left; 
+      }
+      .reveal ul li {
+        margin-bottom: 0.5em; 
+      }
+      @media (max-width: 768px) {
+        .reveal h1 {
+          font-size: 2em;
+        }
+        .reveal h2 {
+          font-size: 1.5em;
+        }
+        .reveal ul li {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+
+        <section>
+          <h1>📸 AI Summer Camp</h1>
+          <h3>Day 2: Neural Networks & Computer Vision</h3>
+          <p>From seeing like a human to learning like one!</p>
+        </section>
+
+
+         <section>
+          <h2>What is AI?</h2>
+          <p>
+            AI = Teaching computers to be smart (like you!)
+          </p>
+          <div class="ai-example-grid">
+            <div class="ai-example-item">
+              <h3>Reason </h3>
+              <p>Chess engines</p>
+            </div>
+            <div class="ai-example-item">
+              <h3>Learn </h3>
+              <p>YouTube algorithm</p>
+            </div>
+            <div class="ai-example-item">
+              <h3>Create </h3>
+              <p>Art generators</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>AI Examples You Use Every Day!</h2>
+          <div style="display: flex; justify-content: space-around; align-items: center;">
+            <div style="text-align: center;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" width="150" style="background: white; padding: 10px; border-radius: 10px;">
+              <h3>ChatGPT</h3>
+              <p>Writes essays, codes, jokes!</p>
+            </div>
+            <div style="text-align: center;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg" width="150">
+              <h3>Netflix</h3>
+              <p>"Because you watched..."</p>
+            </div>
+            <div style="text-align: center;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" width="150" style="background: white; padding: 10px; border-radius: 10px;">
+              <h3>Tesla</h3>
+              <p>Self-driving cars!</p>
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          <h3> AI Family Tree</h3>
+          <ul>
+            <li><strong>AI:</strong> Any smart computer (like a chess program)</li>
+            <li><strong>ML:</strong> Computers that learn from examples (spam filters)</li>
+            <li><strong>DL:</strong> Super advanced ML (recognizes faces, creates art)</li>
+          </ul>
+          <p style="color: #667eea; font-weight: bold;">
+            Tomorrow: We'll use DL to recognize images! 📸
+          </p>
+        </section>
+
+<section>
+    <h4>AI family tree in diagram</h4>
+    <image src="https://cdn-images-1.medium.com/max/1600/1*mQupQ8PoKxd3q2DDV7rFqA.jpeg" width="100%" style="background: white; padding: 10px; border-radius: 10px;">
+
+
+</section>
+
+        <section>
+          <h2>Discussion: AI Detective</h2>
+          <p style="font-size: 1.2em;">
+            <strong>Mission:</strong> You're using AI without knowing it!
+          </p>
+          <p>In groups, find examples of AI in:</p>
+          <ul>
+            <li>Your phone</li>
+            <li>Apps you use</li>
+            <li>Your home</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>👁️ What is Computer Vision?</h2>
+          <ul>
+            <li>
+              <strong>Definition:</strong> Teaching machines to understand
+              images and videos (like humans).
+            </li>
+            <li>
+              <strong>Examples:</strong>
+              <ul>
+                <li>Face ID unlock</li>
+                <li>Autonomous cars recognizing signs</li>
+                <li>Sorting packages in warehouses</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Mini Challenge:</strong> List 3 daily uses of computer
+              vision.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Slide: Hands-on with Pi Camera -->
+        <section>
+          <h2>📷 Hands-On with Raspberry Pi Camera</h2>
+          <ul>
+            <li>
+              <strong>Step 1:</strong> Connect the Raspberry Pi camera module
+              securely.
+            </li>
+            <li>
+              <strong>Step 2:</strong> Capture 5 images of different objects
+              using a Python script.
+            </li>
+            <li>
+              <strong>Step 3:</strong> Save and label each image file clearly
+              (e.g., <code>banana.jpg</code>).
+            </li>
+            <li>
+              <strong>Question for Discussion:</strong> Why is organizing data
+              important for AI projects?
+            </li>
+          </ul>
+        </section>
+
+        <!-- Slide: Image Classification Activity -->
+        <section>
+          <h2>🧠 AI Activity: Image Classification</h2>
+          <ul>
+            <li>
+              <strong>Goal:</strong> Use a pre-built AI model to identify
+              objects in your captured images.
+            </li>
+            <li>
+              <strong>Steps:</strong>
+              <ul>
+                <li>Load the pre-trained AI model.</li>
+                <li>Feed your captured images to the model.</li>
+                <li>See what the AI predicts!</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Discussion:</strong> Was the prediction correct? Why or
+              why not?
+            </li>
+          </ul>
+        </section>
+
+        <!-- Slide: Intro to Neural Networks -->
+        <section>
+          <h2>🧠 What is a Neural Network?</h2>
+          <ul>
+            <li>
+              <strong>Inspired by the brain:</strong> Digital "neurons"
+              connected in layers, learning patterns.
+            </li>
+            <li>
+              <strong>Structure:</strong> Input Layer → Hidden Layers → Output
+              Layer
+            </li>
+            <li>
+              <strong>Analogy:</strong> Like baking a cake:
+              <ul>
+                <li>Inputs = ingredients</li>
+                <li>Hidden layers = mixing & baking</li>
+                <li>Output = finished cake!</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Use Cases:</strong> Speech
+              translation, object detection.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Slide: How Neural Networks Learn -->
+        <section>
+          <h2>📚 How Neural Networks Learn</h2>
+          <ul>
+            <li>
+              <strong>Training:</strong> Show the model vast amounts of labeled
+              data.
+            </li>
+            <li>
+              <strong>Adjusting:</strong> Model tweaks internal connections to
+              improve predictions.
+            </li>
+            <li>
+              <strong>Key Concepts:</strong>
+              <ul>
+                <li>
+                  <strong>Epochs, Accuracy, and Loss</strong> 
+                </li>
+
+                
+              </ul>
+            </li>
+            <li>
+              <strong>Tools for Learning:</strong> Google Colab or Teachable
+              Machine.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Slide: Guided Practice -->
+        <section>
+          <h2>💻 Guided Practice: Train Your First Model</h2>
+          <ul>
+            <li>
+              <strong>Goal:</strong> Train a simple neural network to classify
+              two objects (e.g., "cat" vs. "dog").
+            </li>
+            <li>
+              <strong>Steps:</strong>
+              <ul>
+                <li>Import labeled images into Google Colab.</li>
+                <li>Run the provided training code.</li>
+                <li>Test the model with new, unseen images.</li>
+              </ul>
+            </li>
+            <li><strong>Watch:</strong> See accuracy improve with training!</li>
+
+          </ul>
+        </section>
+
+        <section>
+          <h2>🛠️ Team Project: Build Your Own Classifier</h2>
+          <ul>
+            <li>
+              <strong>Goal:</strong> In teams, build a custom image classifier (by using YOLOv8n model).
+            </li>
+            <li>
+              <strong>Pick a category from the list:</strong>
+              <ul>
+                <li></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Steps:</strong>
+              <ul>
+                <li>Collect and label training images.</li>
+                <li>Train the model (mentor supported).</li>
+                <li>Test it with unseen images.</li>
+              </ul>
+            </li>
+
+          </ul>
+        </section>
+
+        <section>
+          <h2>🎉 Day 2 Accomplishments</h2>
+          <ul>
+            <li>✅ Understood computer vision principles.</li>
+            <li>✅ Used Raspberry Pi camera for images.</li>
+            <li>✅ Trained your first neural network.</li>
+            <li>✅ Began your team image classification project.</li>
+          </ul>
+          <h3>Tomorrow: Deeper into computer vision and embedded AI! 🤖</h3>
+        </section>
+
+
+       
+      </div>
+    </div>
+
+       
+
+
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

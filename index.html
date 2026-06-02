@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4N_soUiGggkq4TxayU7O_echs7FO8ISMD5w&s" type="image/x-icon">
+
+  <title>AI Summer Camp</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+      text-align: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    nav {
+      margin: 3rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+    }
+
+    nav button {
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background 0.4s ease;
+    }
+
+    nav button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @media (min-width: 768px) {
+      nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav button {
+        width: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟 AI Summer Camp 2025</h1>
+    <p>
+      Welcome to an unforgettable week of discovery, coding, and creativity!<br/>
+      Learn how machines see, think, and act, while building your own AI projects with friends and mentors.
+    </p>
+  </header>
+
+  <nav>
+    <button onclick="window.location.href='Day1/main.html'">Day 1: Foundations of Python & AI</button>
+    <button onclick="window.location.href='Day2/main.html'">Day 2: Neural Networks & Computer Vision</button>
+    <button onclick="window.location.href='Day3/main.html'">Day 3: Embedded Systems</button>
+    <button onclick="window.location.href='Day4/main.html'">Day 4: Presentation Day</button>
+    
+    <!-- <button onclick="window.location.href='coming-soon/index.html'">More Content Coming Soon!</button> -->
+    <button onclick="window.location.href='source/index.html'">Resources</button>
+  </nav>
+
+  <footer>
+    © 2025 AI Summer Camp · Powered by Curiosity + Code 🤖✨
+  </footer>
+
+</body>
+</html>

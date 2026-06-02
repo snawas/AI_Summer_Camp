@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AI Summer Camp - Day 1</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- Reveal.js Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css"
+      id="theme"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css"
+    />
+
+    <style>
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .reveal ul {
+        text-align: left;
+        margin-left: 2em;
+      }
+      .reveal ul li {
+        margin-bottom: 0.5em;
+      }
+      .preview-box {
+        background: #e8f4f8;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px 0;
+        border-left: 5px solid #2c5aa0;
+      }
+      .concept-highlight {
+        background: #fff3cd;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      @media (max-width: 768px) {
+        .reveal h1 {
+          font-size: 2em;
+        }
+        .reveal h2 {
+          font-size: 1.5em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+
+        <section>
+          <h2>Welcome! <span class="emoji-large">👋</span></h2>
+          <ul>
+            <li><strong>Instructor Intro:</strong> Victor & Prabhash 
+              <span style="color: #667eea;">(Your AI guides!)</span></li>
+            <li>
+              <strong>Camp Rules:</strong> 
+              <ul>
+                <li>Ask questions = earn respect 🌟</li>
+                <li>Help each other = level up together 🤝</li>
+                <li>Have fun = mandatory! 😄</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="fun-fact">
+            <strong>🎯 Fun Fact:</strong> By the end of this week, you'll build AI that can recognize objects in photos - just like Instagram filters!
+          </div>
+        </section>
+
+
+
+        <section>
+          <h2>AI Camp Roadmap</h2>
+          <ul>
+            <li><strong>Day 1:</strong> Foundations of Python & AI 
+              <span style="color: #667eea;">← You are here!</span></li>
+            <li><strong>Day 2:</strong> Neural Networks & Computer Vision </li>
+            <li>
+              <strong>Day 3:</strong> Embedded System: how AI works on small devices 
+            </li>
+            <li><strong>Day 4:</strong> Final Showcase & Presentations </li>
+          </ul>
+          <p>
+            <strong>Daily Structure:</strong> Morning = Mind-blowing concepts<br>
+            Afternoon = Build cool stuff!
+          </p>
+        </section>
+
+        <section>
+          <h1>AI Summer Camp</h1>
+          <h3>Day 1: Foundations of Python & AI</h3>
+          <p>
+            Welcome to a week of innovation, creativity, and hands-on AI
+            discovery!
+          </p>
+
+          <p style="font-size: 0.9em;">
+            <a href="https://colab.research.google.com/drive/1eeKafOr3nWIhIiZRjv2wlJS86vWgbSWF?usp=sharing" target="_blank">
+              Open Day 1 Colab Notebook
+            </a> &nbsp;|&nbsp; Click to view, run, and download the notebook.
+          </p>
+          <p>Course Material: <a href="https://victoryzcs.github.io/AI_Summer_Camp/" target="_blank">https://victoryzcs.github.io/AI_Summer_Camp/</a></p>
+        </section>
+
+        
+
+        <section>
+          <h2>🐍 What is Python?</h2>
+
+          <div class="code-demo">
+            <p>Python is a programming language that's easy to learn!</p>
+            <!-- <h3>The Boss & Employee Analogy:</h3> -->
+            <p><strong>Natural Language Way:</strong> Boss asks employee to do the task like check website and copy all info </p>
+            <p><strong>Python Way:</strong> You tell computer to do it in seconds! </p>
+          </div>
+
+        </section>
+
+        <section>
+          <h2>🎯 What Can You Build with Python?</h2>
+        </section>
+
+        <section>
+          <h2>🎯 What Can You Build with Python?</h2>
+
+          <ul>
+            <li><strong>Artificial Intelligence</strong> - Like Siri or Alexa! </li>
+            <li><strong>Websites & Apps</strong> - The next TikTok? </li>
+            <li><strong>Games</strong> - From simple to complex </li>
+            <li><strong>Data Science</strong> - Predict the future! </li>
+            <li><strong>Automation</strong> - Let computers do boring stuff </li>
+          </ul>
+
+        </section>
+
+        <section>
+          <h2>Python Basics</h2>
+        </section>
+
+        <section>
+          <h4>Variables: Labeled Boxes for Your Stuff!</h4>
+          <p>Think of variables as labeled boxes where you store information.</p>
+          <pre><code class="language-python">
+# Variables can hold anything!
+image_name = "cat.jpg"      # String (text)
+age = 16                    # Number
+is_student = True           # Boolean (True/False)
+grades = [90, 85, 92]       # List
+favorite_games = {          # Dictionary
+    "fps": "Valorant",
+    "rpg": "Zelda"
+}
+          </code></pre>
+
+        </section>
+
+<section>
+          <h4>Numbers: The Basics of Math!</h4>
+          <p>Numbers are the building blocks of programming - you can do math with them!</p>
+          <pre><code class="language-python">
+# Integers (whole numbers)
+age = 16
+# Floats (decimal numbers)
+height = 1.75  # meters
+# Arithmetic operations
+sum_result = age + 5          # 21
+difference = height - 0.5     # 1.25
+product = age * 2             # 32
+quotient = height / 2         # 0.875
+          </code></pre>
+
+        </section>
+
+
+
+        <section>
+          <h4>Strings: Fancy Word for Text!</h4>
+          <p>Strings are just text - anything made of letters, numbers, or symbols.</p>
+          <pre><code class="language-python">
+# Strings need quotes (single ' or double " both work)
+greeting = "Hello, world!"
+game_status = 'Game Over!'
+emoji_message = "Python is cool!"
+
+# You can combine strings
+first_name = "Alex"
+last_name = "Smith"
+full_name = first_name + " " + last_name  # "Alex Smith"
+
+# Or use f-strings (the cool way!)
+message = f"Player {first_name} scored {100} points!"
+print(message)  # Player Alex scored 100 points!
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>Booleans: The Yes/No of Programming</h4> 
+          <p>Booleans can only be True or False - perfect for making decisions!</p>
+          <pre><code class="language-python">
+# Real-life examples
+is_tired = True
+has_homework = False
+game_paused = True
+
+# Use them to make decisions
+if is_tired:
+    print("Go get some rest!")
+else:
+    print("Let's keep coding!")
+
+# Combine conditions
+if has_homework and not is_tired:
+    print("Time to do homework!")
+elif has_homework and is_tired:
+    print("Take a short break, then homework!")
+else:
+    print("Free time! ")
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>Dictionaries: Like a Real Dictionary!</h4>
+          <p>Store information with labels (keys) and values - super organized!</p>
+          <pre><code class="language-python">
+# Student profile dictionary
+student = {
+    "name": "Alex",
+    "age": 16,
+    "grade": "11th",
+    "favorite_subject": "Computer Science",
+    "hobbies": ["gaming", "coding", "music"]
+}
+
+# Access information
+print(student["name"])           # Alex
+print(student["hobbies"])        # ["gaming", "coding", "music"]
+
+# Update information
+student["age"] = 17              # Birthday! 
+student["skills"] = ["Python", "AI"]  # Add new key
+
+# Game character example
+character = {
+    "health": 100,
+    "level": 5,
+    "inventory": ["sword", "potion", "map"]
+}
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>Lists: Your Data in a Row!</h4>
+          <p>Lists are like a row of boxes, each holding a piece of information.</p>
+          <pre><code class="language-python">
+# List of images for AI training
+images = ["apple_image.jpg", "banana_image.jpg", "cherry_image.jpg"]
+
+# Access items by position (starts at 0!)
+print(images[0])    # "apple_image.jpg" (first item)
+print(images[1])    # "banana_image.jpg" (second item)
+print(images[-1])   # "cherry_image.jpg" (last item)
+
+# Add more items
+images.append("orange_image.jpg")
+
+# Lists can hold anything!
+mixed_list = ["text", 42, True, [1, 2, 3]]
+
+# Useful for AI data
+training_scores = [0.65, 0.78, 0.82, 0.91, 0.95]
+print(f"AI improved from {training_scores[0]} to {training_scores[-1]}!")
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>For Loops: Do Things Over and Over!</h4>
+          <p>Loops let you repeat actions without writing the same code multiple times.</p>
+          <pre><code class="language-python">
+# Process each image in our list
+images = ["cat.jpg", "dog.jpg", "bird.jpg"]
+
+for image in images:
+    print(f"Processing {image}...")
+    print(f"AI analyzing {image} ")
+    print("Done! \n")
+
+# Loop with numbers
+for i in range(5):
+    print(f"Training round {i+1}/5")
+
+# Loop through dictionary
+student_scores = {"Alice": 95, "Bob": 87, "Charlie": 92}
+for name, score in student_scores.items():
+    print(f"{name} scored {score} points!")
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>While Loops: Keep Going Until...</h4>
+          <p>While loops keep running as long as a condition is true!</p>
+          <pre><code class="language-python" >
+# Gaming example
+health = 100
+print("Game starting! ")
+
+while health > 0:
+    print(f"Health: {health} ")
+    damage = 20
+    health = health - damage
+    
+print("Game Over!")
+
+# User input example
+password = ""
+while password != "AI2024":
+    password = input("Enter password: ")
+    if password != "AI2024":
+        print("Wrong! Try again...")
+        
+print("Access granted! Welcome!")
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>If Elif-Else Statements: Make Decisions!</h4>
+          <p>Use if statements to check conditions and run code only if they're true!</p>
+          <pre><code class="language-python">
+# Check if a number is even or odd
+number = 42
+if number % 2 == 0: # Check if the number is divisible by 2
+    print(f"{number} is even!")
+else:
+    print(f"{number} is odd!")
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>⚡ Functions: Your Own Commands!</h4>
+          <p>Functions are like creating your own instructions that you can reuse!</p>
+          <pre><code class="language-python">
+# Basic function
+def say_hello():
+    print("Hello there! ")
+    print("Welcome to AI Camp!")
+
+# Function with input (parameters)
+def greet(name):
+    print(f"Hi, {name}! Ready to code?")
+
+# Function with output (return)
+def calculate_accuracy(correct, total):
+    accuracy = (correct / total) * 100
+    return accuracy
+
+# Using our functions
+say_hello()
+greet("Alex")
+ai_score = calculate_accuracy(85, 100)
+print(f"AI accuracy: {ai_score}%")
+          </code></pre>
+
+          </section>
+
+        <section>
+          <h4>Try-except Blocks: Exception Handling!</h4></h4>
+          <p>Handle errors gracefully without crashing your program!</p>
+          <pre><code class="language-python">
+# Example of handling division by zero
+def safe_divide(a, b):
+    try: 
+        result = a / b
+        return result
+    except ZeroDivisionError:
+        return "Error: Division by zero is not allowed."
+
+# Example usage
+print(safe_divide(10, 2))
+print(safe_divide(10, 0))
+          </code></pre>
+
+          </section>
+
+        <section>
+          <h4>Finally Blocks: Run Code Regardless of Exceptions</h4>
+          <p>Use finally to run code that should always execute, like cleanup actions.</p>
+          <pre><code class="language-python">
+try:
+    file = open("example.txt", "r")
+    content = file.read()
+    print(content)
+except FileNotFoundError:
+    print("File not found.")
+finally:
+    print("Closing file...")
+    file.close()
+
+          </code></pre>
+        </section>
+        
+        <section>
+          <h2>Let's read some code: Real Examples!</h2>
+          <pre><code class="language-python">
+# Game health system
+def take_damage(current_health, damage_amount):
+    new_health = current_health - damage_amount
+    if new_health <= 0:
+        print("Game Over! ")
+        return 0
+    else:
+        print(f"Ouch! Health: {new_health}")
+        return new_health
+
+# Test it!
+player_health = take_damage(100, 30)
+          </code></pre>
+        </section>
+
+        <section>
+
+          <h2>Let's Code!</h2>
+          <p>Now it's your turn to create something awesome!</p>
+          <p>We'll build some programs together with Python!</p>
+        </section>
+
+        <section>
+          <h4>Let's Code: Temperature Converter!</h4>
+          <br>
+          <p> <strong>Input</strong>: weather in Celsius</p>
+          <p> <strong>Formula</strong>: Fahrenheit = (Celsius * 9/5) + 32</p>
+          <p> <strong>Output</strong>: temperature in Fahrenheit with personality!</p>
+        </section>
+       
+
+
+
+
+        <section>
+          <h4>Activity 1: Create an "About Me" Program</h4>
+          <p>Your task: Build a program that introduces yourself by filling the blanks in the dictionary!</p>
+          <p><strong>Ideal Output:</strong><br>
+            <code>
+              STUDENT PROFILE <br>
+              name: Alex<br>
+              age: 16<br>
+              hobbies: gaming, music<br>
+              ...<br>
+              Fun fact: Alex wants to be a Game Developer!
+            </code>
+          </p>
+        </section>
+
+        
+
+
+
+
+        <section>
+          <h4>Activity 2: Grade Calculator</h4>
+          <p>Your task: Write a grade calculator that:</p>
+          <ul>
+            <li>Stores grades in a <strong>list</strong></li>
+            <li>Uses a <strong>loop</strong> to calculate the average</li>
+            <li>Uses <strong>if/else</strong> statements to assign a letter grade</li>
+          </ul>
+          <p> <strong>Ideal Output:</strong><br>
+            <code>
+Average score: 87.6. Letter Grade: B
+
+            </code>
+          </p>
+        </section>
+
+       
+     
+</section>
+
+
+<section>
+  <h4> Boss Challenge: Rock, Paper, Scissors</h4>
+  <p> Your task: Build the ultimate Rock, Paper, Scissors game!</p>
+  <p> <strong>Expected Input:</strong> User types "rock", "paper", or "scissors"</p>
+  <p> <strong>Expected Output:</strong> Game results and score updates</p>
+  <p> <strong>Example:</strong><br>
+    <code>
+      You chose: rock<br>
+      Computer chose: scissors<br>
+      You win this round! <br>
+      Score - You: 1 | Computer: 0
+    </code>
+  </p>
+</section>
+
+
+
+
+
+
+
+
+
+       
+
+       
+
+        <section>
+          <h2>Live Demo: AI in Action!</h2>
+
+        </section>
+
+        
+        <section>
+          <h2>Hands-on Project: Movie Recommendation System</h2>
+          <p>Let's build a simple movie recommendation system using Python!</p>
+        </section>
+
+        <section>
+          <h4>Task 1: Find User Preferences</h4>
+          <ul>
+            <li>Given a list of movies user watched (3 movies) as well as a list of genres for each movie</li>
+            <li>Determine the most common genres as user preferences (if there are multiple genres, consider all of them)</li>
+            <li>Example: User watched "The Godfather", "Pulp Fiction", "Forrest Gump" → Preferred genre: <strong>Drama</strong></li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Task 2: Recommend Movies (Optional)</h4>
+          <ul>
+            <li>Use preferred genres to find matching movies</li>
+            <li>Rank movies by how many preferred genres they match</li>
+            <li>Exclude movies already watched by user</li>
+            <li>Limit recommendations to top 3 movies</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Task 3: Adaptive Recommendations for Changing Preferences (Optional)</h4>
+          <ul>
+          <li>A user watches 100 Action movies, then his friend watches 3 Comedy movies.<br>
+              Using the original algorithm, recommendations still favor Action movies.</li>
+            <li>Goal: Recognize recent viewing trends over historical data, the preference from the original algorithm is Action, but now it's Comedy</li>
+            <li>Hint: Use a time decay factor to give more weight to recent views</li>
+          </ul>
+
+        </section>
+
+
+        <section data-background-gradient="linear-gradient(to right, #11998e, #38ef7d)">
+          <h2>🎉 Day 1 Complete!</h2>
+   
+            <h3>You've Mastered:</h3>
+            <ul>
+              <li>✅ Variables, Strings, Booleans</li>
+              <li>✅ Lists and Dictionaries</li>
+              <li>✅ For and While loops</li>
+              <li>✅ Functions with parameters and returns</li>
+              <li>✅ Understanding AI vs ML vs DL</li>
+            </ul>
+            
+        </section>
+
+        <section>
+          <h3>Tomorrow's Adventure:</h3>
+            <ul>
+              <li>Computer Vision magic</li>
+              <li>Neural Networks explained</li>
+              <li>Hands-on with cameras (maybe?)</li>
+              <li>Build your own image classifier!</li>
+            </ul>
+          </div>
+          <p style="font-size: 1.5em; color: white; margin-top: 30px;">
+            See you tomorrow, AI developers! 
+          </p>
+        </section>
+
+
+          
+
+        
+      </div>
+    </div>
+
+    
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+
+    </script>
+  </body>
+</html>
