@@ -71,14 +71,14 @@
         <section>
           <h2>Welcome! <span class="emoji-large">👋</span></h2>
           <ul>
-            <li><strong>Instructor Intro:</strong> Victor & Prabhash 
+            <li><strong>Instructor Intro:</strong> Stephanie & Prabhash 
               <span style="color: #667eea;">(Your AI guides!)</span></li>
             <li>
               <strong>Camp Rules:</strong> 
               <ul>
-                <li>Ask questions = earn respect 🌟</li>
-                <li>Help each other = level up together 🤝</li>
-                <li>Have fun = mandatory! 😄</li>
+                <li>Ask questions</li>
+                <li>Help each other</li>
+                <li>Have fun!</li>
               </ul>
             </li>
           </ul>
@@ -119,7 +119,7 @@
               Open Day 1 Colab Notebook
             </a> &nbsp;|&nbsp; Click to view, run, and download the notebook.
           </p>
-          <p>Course Material: <a href="https://victoryzcs.github.io/AI_Summer_Camp/" target="_blank">https://victoryzcs.github.io/AI_Summer_Camp/</a></p>
+          <p>Course Material: <a href="https://snawas.github.io/AI_Summer_Camp/" target="_blank">https://snawas.github.io/AI_Summer_Camp/</a></p>
         </section>
 
         
@@ -130,8 +130,8 @@
           <div class="code-demo">
             <p>Python is a programming language that's easy to learn!</p>
             <!-- <h3>The Boss & Employee Analogy:</h3> -->
-            <p><strong>Natural Language Way:</strong> Boss asks employee to do the task like check website and copy all info </p>
-            <p><strong>Python Way:</strong> You tell computer to do it in seconds! </p>
+            <p><strong>Natural Language Way:</strong> Boss asks employee to do a task like check a website and copy all info </p>
+            <p><strong>Python Way:</strong> You tell a computer to do it in seconds! </p>
           </div>
 
         </section>
@@ -200,7 +200,7 @@ quotient = height / 2         # 0.875
 # Strings need quotes (single ' or double " both work)
 greeting = "Hello, world!"
 game_status = 'Game Over!'
-emoji_message = "Python is cool!"
+python_message = "Python is cool!"
 
 # You can combine strings
 first_name = "Alex"
@@ -239,6 +239,30 @@ else:
         </section>
 
         <section>
+          <h4>Lists: Your Data in a Row!</h4>
+          <p>Lists are like a row of boxes, each holding a piece of information.</p>
+          <pre><code class="language-python">
+# List of images for AI training
+images = ["apple_image.jpg", "banana_image.jpg", "cherry_image.jpg"]
+
+# Access items by position (starts at 0!)
+print(images[0])    # "apple_image.jpg" (first item)
+print(images[1])    # "banana_image.jpg" (second item)
+print(images[-1])   # "cherry_image.jpg" (last item)
+
+# Add more items
+images.append("orange_image.jpg")
+
+# Lists can hold anything!
+mixed_list = ["text", 42, True, [1, 2, 3]]
+
+# Useful for AI data
+training_scores = [0.65, 0.78, 0.82, 0.91, 0.95]
+print(f"AI improved from {training_scores[0]} to {training_scores[-1]}!")
+          </code></pre>
+        </section>
+
+        <section>
           <h4>Dictionaries: Like a Real Dictionary!</h4>
           <p>Store information with labels (keys) and values - super organized!</p>
           <pre><code class="language-python">
@@ -265,30 +289,6 @@ character = {
     "level": 5,
     "inventory": ["sword", "potion", "map"]
 }
-          </code></pre>
-        </section>
-
-        <section>
-          <h4>Lists: Your Data in a Row!</h4>
-          <p>Lists are like a row of boxes, each holding a piece of information.</p>
-          <pre><code class="language-python">
-# List of images for AI training
-images = ["apple_image.jpg", "banana_image.jpg", "cherry_image.jpg"]
-
-# Access items by position (starts at 0!)
-print(images[0])    # "apple_image.jpg" (first item)
-print(images[1])    # "banana_image.jpg" (second item)
-print(images[-1])   # "cherry_image.jpg" (last item)
-
-# Add more items
-images.append("orange_image.jpg")
-
-# Lists can hold anything!
-mixed_list = ["text", 42, True, [1, 2, 3]]
-
-# Useful for AI data
-training_scores = [0.65, 0.78, 0.82, 0.91, 0.95]
-print(f"AI improved from {training_scores[0]} to {training_scores[-1]}!")
           </code></pre>
         </section>
 
@@ -332,9 +332,9 @@ print("Game Over!")
 
 # User input example
 password = ""
-while password != "AI2024":
+while password != "AI2026":
     password = input("Enter password: ")
-    if password != "AI2024":
+    if password != "AI2026":
         print("Wrong! Try again...")
         
 print("Access granted! Welcome!")
@@ -342,7 +342,7 @@ print("Access granted! Welcome!")
         </section>
 
         <section>
-          <h4>If Elif-Else Statements: Make Decisions!</h4>
+          <h4>If-Else Statements: Make Decisions!</h4>
           <p>Use if statements to check conditions and run code only if they're true!</p>
           <pre><code class="language-python">
 # Check if a number is even or odd
@@ -400,7 +400,7 @@ print(safe_divide(10, 0))
 
           </section>
 
-        <section>
+        <!-- <section>
           <h4>Finally Blocks: Run Code Regardless of Exceptions</h4>
           <p>Use finally to run code that should always execute, like cleanup actions.</p>
           <pre><code class="language-python">
@@ -415,7 +415,7 @@ finally:
     file.close()
 
           </code></pre>
-        </section>
+        </section> -->
         
         <section>
           <h2>Let's read some code: Real Examples!</h2>
@@ -447,7 +447,7 @@ player_health = take_damage(100, 30)
           <br>
           <p> <strong>Input</strong>: weather in Celsius</p>
           <p> <strong>Formula</strong>: Fahrenheit = (Celsius * 9/5) + 32</p>
-          <p> <strong>Output</strong>: temperature in Fahrenheit with personality!</p>
+          <p> <strong>Output</strong>: temperature in Fahrenheit!</p>
         </section>
        
 
@@ -573,7 +573,6 @@ Average score: 87.6. Letter Grade: B
               <li>✅ Lists and Dictionaries</li>
               <li>✅ For and While loops</li>
               <li>✅ Functions with parameters and returns</li>
-              <li>✅ Understanding AI vs ML vs DL</li>
             </ul>
             
         </section>
